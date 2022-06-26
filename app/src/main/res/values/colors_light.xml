@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="window_background_light">#FFFFFF</color>
+    <color name="color_background_light">#FFFFFF</color>
+    <color name="text_color_primary_light">#111111</color>
+    <color name="text_color_secondary_light">#525252</color>
+    <color name="icon_color_primary_light">#262626</color>
+    <color name="icon_color_secondary_light">#555555</color>
+    <color name="button_color_primary_light">#8C8C8C</color>
+    <color name="ripple_color_primary_light">#111111</color>
+</resources>

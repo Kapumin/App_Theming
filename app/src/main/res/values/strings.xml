@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">App Theming</string>
+    <string name="light_theme">Light Theme</string>
+    <string name="dim_light_theme">Dim Light Theme</string>
+    <string name="dark_blue_theme">Dark Blue Theme</string>
+    <string name="dark_theme">Dark Theme</string>
+    <string name="this_is_a_primary_text">This is a Primary Text</string>
+    <string name="this_is_secondary_text">This is Secondary Text</string>
+</resources>
