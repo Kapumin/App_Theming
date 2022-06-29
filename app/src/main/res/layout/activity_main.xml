@@ -9,8 +9,8 @@
     <ImageView
         android:id="@+id/iv_primary_icon"
         style="@style/IconColorPrimaryStyle"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="200dp"
         android:contentDescription="@string/app_name"
         android:padding="8dp"
         android:src="@drawable/ic_android_24dp"
@@ -21,14 +21,14 @@
         style="@style/TextColorPrimaryStyle"
         android:padding="8dp"
         android:text="@string/this_is_a_primary_text"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_primary_icon"
         app:layout_constraintStart_toEndOf="@+id/iv_primary_icon"
         app:layout_constraintTop_toTopOf="@+id/iv_primary_icon" />
 
     <ImageView
         android:id="@+id/iv_secondary_icon"
         style="@style/IconColorSecondaryStyle"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="100dp"
         android:layout_marginTop="20dp"
         android:contentDescription="@string/app_name"
         android:padding="8dp"
@@ -40,9 +40,22 @@
         style="@style/TextColorSecondaryStyle"
         android:padding="8dp"
         android:text="@string/this_is_secondary_text"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_secondary_icon"
         app:layout_constraintStart_toEndOf="@+id/iv_secondary_icon"
         app:layout_constraintTop_toTopOf="@+id/iv_secondary_icon" />
+
+    <TextView
+        android:id="@+id/tv_theme_name"
+        style="@style/TextColorPrimaryStyle"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_secondary_icon"
+        tools:text="Light Theme" />
 
     <TextView
         android:id="@+id/tv_light_theme"
@@ -62,7 +75,7 @@
         android:background="@drawable/button_primary_rect_rounded_bg"
         android:padding="8dp"
         android:text="@string/dim_light_theme"
-        app:layout_constraintBottom_toTopOf="@+id/tv_dim_dark_blue_theme"
+        app:layout_constraintBottom_toTopOf="@+id/tv_dark_blue_theme"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/tv_light_theme" />
 
@@ -74,11 +87,11 @@
         android:padding="8dp"
         android:text="@string/dark_theme"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/tv_dim_dark_blue_theme"
+        app:layout_constraintEnd_toStartOf="@+id/tv_dark_blue_theme"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/tv_dim_dark_blue_theme"
+        android:id="@+id/tv_dark_blue_theme"
         style="@style/TextColorPrimaryStyle"
         android:layout_margin="30dp"
         android:background="@drawable/button_primary_rect_rounded_bg"

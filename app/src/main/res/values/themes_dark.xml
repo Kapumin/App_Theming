@@ -3,8 +3,9 @@
     <style name="MyDarkTheme" parent="Theme.MaterialComponents.NoActionBar">
         <item name="android:statusBarColor">@color/color_background_dark</item>
         <item name="android:windowBackground">@color/window_background_dark</item>
-        <item name="android:colorBackground">@color/window_background_dark</item>
-        <item name="colorPrimary">@color/orange</item>
+        <item name="android:colorBackground">@color/color_background_dark</item>
+        <item name="colorPrimary">?android:attr/windowBackground</item>
+        <item name="colorAccent">@android:color/white</item>
 
         <!--    my attributes    -->
         <item name="textColorPrimary">@color/text_color_primary_dark</item>

@@ -13,8 +13,7 @@ class PreferenceManager(private val context: Context) {
         sharedPreferences?.let { instance ->
             return instance
         } ?: let {
-            sharedPreferences =
-                context.getSharedPreferences(APP_SHARED_PREFERENCE, Context.MODE_PRIVATE)
+            sharedPreferences = context.getSharedPreferences(APP_SHARED_PREFERENCE, Context.MODE_PRIVATE)
             editor = sharedPreferences?.edit()
             return sharedPreferences
         }

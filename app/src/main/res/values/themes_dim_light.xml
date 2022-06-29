@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. -->
+    <style name="MyDimLightTheme" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="android:statusBarColor">@color/color_background_dim_light</item>
+        <item name="android:windowBackground">@color/window_background_dim_light</item>
+        <item name="android:colorBackground">@color/color_background_dim_light</item>
+        <item name="colorPrimary">?android:attr/windowBackground</item>
+        <item name="colorAccent">@android:color/white</item>
+
+        <!--    my attributes    -->
+        <item name="textColorPrimary">@color/text_color_primary_dim_light</item>
+        <item name="textColorSecondary">@color/text_color_secondary_dim_light</item>
+        <item name="iconColorPrimary">@color/icon_color_primary_dim_light</item>
+        <item name="iconColorSecondary">@color/icon_color_secondary_dim_light</item>
+        <item name="buttonColorPrimary">@color/button_color_primary_dim_light</item>
+        <item name="rippleColorPrimary">@color/ripple_color_primary_dim_light</item>
+    </style>
+</resources>

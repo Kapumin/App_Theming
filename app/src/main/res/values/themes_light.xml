@@ -3,9 +3,9 @@
     <style name="MyLightTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="android:statusBarColor">@color/color_background_light</item>
         <item name="android:windowBackground">@color/window_background_light</item>
-        <item name="android:colorBackground">@color/window_background_light</item>
-        <item name="colorPrimary">@color/orange</item>
-
+        <item name="android:colorBackground">@color/color_background_light</item>
+        <item name="colorPrimary">?android:attr/windowBackground</item>
+        <item name="colorAccent">@android:color/black</item>
         <!--    my attributes    -->
         <item name="textColorPrimary">@color/text_color_primary_light</item>
         <item name="textColorSecondary">#353535</item>

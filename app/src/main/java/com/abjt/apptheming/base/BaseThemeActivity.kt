@@ -5,8 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.abjt.apptheming.R
 import com.abjt.apptheming.common.APP_THEME
 import com.abjt.apptheming.common.PreferenceManager
-import com.abjt.apptheming.common.Themes.DARK_THEME
-import com.abjt.apptheming.common.Themes.LIGHT_THEME
+import com.abjt.apptheming.common.Themes.*
 
 open class BaseThemeActivity : AppCompatActivity() {
 
@@ -20,6 +19,8 @@ open class BaseThemeActivity : AppCompatActivity() {
             when (getString(APP_THEME)) {
                 LIGHT_THEME.name -> setTheme(R.style.MyLightTheme)
                 DARK_THEME.name -> setTheme(R.style.MyDarkTheme)
+                DARK_BLUE_THEME.name -> setTheme(R.style.MyDarkBlueTheme)
+                DIM_LIGHT_THEME.name -> setTheme(R.style.MyDimLightTheme)
                 else -> setTheme(R.style.MyLightTheme)
             }
         }

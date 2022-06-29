@@ -4,8 +4,8 @@ import android.content.Intent
 import android.os.Bundle
 import com.abjt.apptheming.base.BaseThemeActivity
 import com.abjt.apptheming.common.APP_THEME
-import com.abjt.apptheming.common.Themes.DARK_THEME
-import com.abjt.apptheming.common.Themes.LIGHT_THEME
+import com.abjt.apptheming.common.Themes
+import com.abjt.apptheming.common.Themes.*
 import com.abjt.apptheming.databinding.ActivityMainBinding
 
 class HomeActivity : BaseThemeActivity() {
@@ -16,23 +16,34 @@ class HomeActivity : BaseThemeActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        setThemeName()
         setClickListeners()
+    }
+
+    private fun setThemeName() {
+        binding.tvThemeName.text = preferenceManager.getString(APP_THEME)
     }
 
     private fun setClickListeners() {
         binding.tvLightTheme.setOnClickListener {
-            preferenceManager.putString(APP_THEME, LIGHT_THEME.name)
-            recreateHomeActivity()
+            saveAndRestart(LIGHT_THEME.name)
         }
         binding.tvDarkTheme.setOnClickListener {
-            preferenceManager.putString(APP_THEME, DARK_THEME.name)
-            recreateHomeActivity()
+            saveAndRestart(DARK_THEME.name)
+        }
+        binding.tvDarkBlueTheme.setOnClickListener {
+            saveAndRestart(DARK_BLUE_THEME.name)
+        }
+        binding.tvDimLightTheme.setOnClickListener {
+            saveAndRestart(DIM_LIGHT_THEME.name)
         }
     }
 
-    private fun recreateHomeActivity() {
-        startActivity(Intent(this, HomeActivity::class.java))
-        finish()
-        overridePendingTransition(0, 0)
+    private fun saveAndRestart(themeName: String) {
+        preferenceManager.putString(APP_THEME, themeName).also {
+            startActivity(Intent(this, HomeActivity::class.java))
+            finish()
+            overridePendingTransition(0, 0)
+        }
     }
 }

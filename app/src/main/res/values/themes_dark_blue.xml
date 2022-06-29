@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. -->
+    <style name="MyDarkBlueTheme" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="android:statusBarColor">@color/color_background_dark_blue</item>
+        <item name="android:windowBackground">@color/window_background_dark_blue</item>
+        <item name="colorOnBackground">@color/color_background_dark_blue</item>
+        <item name="colorPrimary">?android:attr/windowBackground</item>
+        <item name="colorAccent">@android:color/white</item>
+
+        <!--    my attributes    -->
+        <item name="textColorPrimary">@color/text_color_primary_dark_blue</item>
+        <item name="textColorSecondary">@color/text_color_secondary_dark_blue</item>
+        <item name="iconColorPrimary">@color/icon_color_primary_dark_blue</item>
+        <item name="iconColorSecondary">@color/icon_color_secondary_dark_blue</item>
+        <item name="buttonColorPrimary">@color/button_color_primary_dark_blue</item>
+        <item name="rippleColorPrimary">@color/ripple_color_primary_dark_blue</item>
+    </style>
+</resources>

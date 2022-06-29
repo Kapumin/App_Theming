@@ -2,4 +2,10 @@
 <resources>
     <color name="window_background_dark_blue">#03095C</color>
     <color name="color_background_dark_blue">#03095C</color>
+    <color name="text_color_primary_dark_blue">#EB8F15</color>
+    <color name="text_color_secondary_dark_blue">#A77F49</color>
+    <color name="icon_color_primary_dark_blue">#D3B578</color>
+    <color name="icon_color_secondary_dark_blue">#6A511E</color>
+    <color name="button_color_primary_dark_blue">#14FFFFFF</color>
+    <color name="ripple_color_primary_dark_blue">#0952ED</color>
 </resources>
